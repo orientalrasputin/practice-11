@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class BestellungController {
 
-
-
   private final BestellungenService bestellungen;
 
   public BestellungController(BestellungenService bestellungen) {
