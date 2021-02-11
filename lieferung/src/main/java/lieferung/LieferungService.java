@@ -37,7 +37,7 @@ public class LieferungService {
       System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
       DeliverCallback deliverCallback = (consumerTag, delivery) -> {
-
+      HttpResponse receive = Unirest.get
 
       };
       channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
