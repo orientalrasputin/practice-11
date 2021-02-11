@@ -45,5 +45,4 @@ public class BestellungRepository {
   public Collection<Bestellung> findAll() {
     return db.values().stream().sorted().collect(toList());
   }
-
 }

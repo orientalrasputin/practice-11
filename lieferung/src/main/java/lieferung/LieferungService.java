@@ -3,6 +3,9 @@ package lieferung;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class LieferungService {
 
@@ -25,5 +28,9 @@ public class LieferungService {
 
   public int anzahl() {
     return repository.count();
+  }
+
+  public List<Long> alleAbId(Long id) {
+    return repository.findLieferungenGreaterThan(id);
   }
 }
